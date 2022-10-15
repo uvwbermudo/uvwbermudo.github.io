@@ -1,0 +1,13 @@
+* {
+    /* font-size: px; */
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+@media (min-width:768px) {
+    .news-input {
+        width: 50%;
+    }
+}
