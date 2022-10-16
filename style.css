@@ -1,7 +1,11 @@
-* {
-    /* font-size: px; */
+body::before {
+    display: block;
+    content: '';
+    height:60px;
 }
-
+* {
+    font-family: 'Roboto', sans-serif;
+}
 .text-justify {
     text-align: justify;
 }
@@ -10,4 +14,15 @@
     .news-input {
         width: 50%;
     }
+}
+
+.equal {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
 }

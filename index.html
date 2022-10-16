@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Bootcamp</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-4">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
             <div class="container">
-                <a href="#" class="navbar-brand bg-red">Frontend Bootcamp</a>
+                <a href="#" class="navbar-brand text-light">Mock Up Website by Urel</a>
  
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" >
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navmenu">
-                    <ul class="navbar-nav ms-auto">
+                <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a href="#learn" class="nav-link">What You'll Learn</a>
                         </li>
@@ -44,7 +48,7 @@
                         <h1>Become a <span class="text-warning h1"> Web Developer!</span></h1> 
                         <p class="lead my-4">We Focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for their first dev role.
                         </p>
-                        <button class="btn btn-primary btn-lg">
+                        <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
                             Start The Enrollment
                         </button>
                     </div>
@@ -72,19 +76,291 @@
         <!-- Boxes -->
         <section class="p-5">
             <div class="container">
-                <div class="row text-center">
-                    <div class="col-md">Col</div>
-                    <div class="col-md">Col</div>
-                    <div class="col-md">Col</div>
+                <div class="row text-center gy-4">
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-laptop"></i>
+                                </div>  
+                                <h3 class="card-title mb-3">Virtual</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nemo omnis, at quae inventore velit!
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    Read More!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-secondary text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-person-square"></i>
+                                </div>  
+                                <h3 class="card-title mb-3">Hybrid</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nemo omnis, at quae inventore velit!
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    Read More!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-people"></i>
+                                </div>  
+                                <h3 class="card-title mb-3">In Person</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nemo omnis, at quae inventore velit!
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    Read More!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- COMMENT -->
 
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!-- Learn Section -->
+        <section class="p-5" id="learn">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md">
+                        <img src="img/fundamentals.svg" class="img-fluid" alt="">
+                    </div>
+                    <div class="p-5 col-md">
+                        <h2>Learn the Fundamentals</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, eum optio! Architecto porro consectetur error?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem perspiciatis odit praesentium quia quidem iste dolorum corporis hic commodi a aliquid omnis nemo labore, fugiat consequatur. Omnis, itaque minus.</p>
+                        <a href="#" class="btn btn-light btn-lg mt-3">
+                           <i class="bi bi-chevron-right"></i> Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Learn React -->
+        <section class="p-5 bg-dark text-light" id="learn">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="p-5 col-md">
+                        <h2>Learn React</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, eum optio! Architecto porro consectetur error?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem perspiciatis odit praesentium quia quidem iste dolorum corporis hic commodi a aliquid omnis nemo labore, fugiat consequatur. Omnis, itaque minus.</p>
+                        <a href="#" class="btn btn-dark btn-lg mt-3">
+                           <i class="bi bi-chevron-right"></i> Read More
+                        </a>
+                    </div>
+                    <div class="col-md">
+                        <img src="img/react.svg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accordion -->
+        <section id="questions" class="p-5">
+            <div class="container">
+                <h2 class="text-center mb-4"> Frequently Asked Questions</h2>
+                <div class="accordion accordion-flush" id="questions">
+                    <!-- ITEM 1 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-1" a\>
+                          Where exactly are you located?
+                        </button>
+                      </h2>
+                      <div id="question-1" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur rem a ipsa. Corrupti, adipisci voluptatem reprehenderit soluta officia eius! Ea est eaque ipsum accusantium consequatur esse perspiciatis necessitatibus veritatis cum dolorem, nam suscipit nulla numquam sed assumenda! Aliquam, perspiciatis. Totam, ea ullam consectetur cum ipsa pariatur vel reiciendis rem impedit.</div>
+                      </div>
+                    </div>
+                    
+                    <!-- ITEM 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-2" a\>
+                              How much to attend?
+                            </button>
+                          </h2>
+                          <div id="question-2" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptate.</div>
+                          </div>
+                    </div>
+                    <!-- ITEM 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-3" a\>
+                              What do i need to know?
+                            </button>
+                          </h2>
+                          <div id="question-3" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repudiandae reprehenderit alias consectetur fuga rem natus porro voluptatum laudantium earum?</div>
+                          </div>
+                    </div>
+                    <!-- ITEM 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-4" a\>
+                            Will I be ready to get a job after this course?
+                            </button>
+                        </h2>
+                        <div id="question-4" class="accordion-collapse collapse"  data-bs-parent="#questions">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur rem a ipsa. Corrupti, adipisci voluptatem reprehenderit soluta officia eius! Ea est eaque ipsum accusantium consequatur esse perspiciatis necessitatibus veritatis cum dolorem, nam suscipit nulla numquam sed assumenda! Aliquam, perspiciatis. Totam, ea ullam consectetur cum ipsa pariatur vel reiciendis rem impedit.</div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <section id="instructors" class="p-5 bg-primary">
+            <div class="container">
+                <h2 class="text-center text-white"> Our Instructors</h2>
+                <p class="lead text-center text-white mb-5"> Our Instructors all have 5+ years working as a web developer in the industry</p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bi-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3"alt="">
+                                <h3 class="card-title"> John Doe</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid corrupti voluptatibus dignissimos molestias harum, libero, blanditiis dolorum, inventore nesciunt error animi. Eius reiciendis provident in sunt officiis, rerum delectus illo?</p>
+                                <a href="#" class=""><i class="bi-twitter text-dark"></i></a>
+                                <a href="#" class=""><i class="bi-linkedin text-dark"></i></a>
+                                <a href="#" class=""><i class="bi-facebook text-dark"></i></a>
+                                <a href="#" class=""><i class="bi-instagram text-dark"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bi-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3"alt="">
+                                <h3 class="card-title"> Jane Doe</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid corrupti voluptatibus dignissimos molestias harum, libero, blanditiis dolorum, inventore nesciunt error animi. Eius reiciendis provident in sunt officiis, rerum delectus illo?
+                                </p>
+                                <a href="#" class=""><i class="bi-twitter text-dark"></i></a>
+                                <a href="#" class=""><i class="bi-linkedin text-dark"></i></a>
+                                <a href="#" class=""><i class="bi-facebook text-dark"></i></a>
+                                <a href="#" class=""><i class="bi-instagram text-dark"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bi-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/men/7.jpg" class="rounded-circle mb-3"alt="">
+                                <h3 class="card-title"> Steve Smith</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid corrupti voluptatibus dignissimos molestias harum, libero, blanditiis dolorum, inventore nesciunt error animi. Eius reiciendis provident in sunt officiis, rerum delectus illo?
+                                </p>
+                                <a href="#" class=""><i class="bi-twitter text-dark"></i></a>
+                                <a href="#" class=""><i class="bi-linkedin text-dark"></i></a>
+                                <a href="#" class=""><i class="bi-facebook text-dark"></i></a>
+                                <a href="#" class=""><i class="bi-instagram text-dark"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bi-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3"alt="">
+                                <h3 class="card-title"> Riza Anches</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid corrupti voluptatibus dignissimos molestias harum, libero, blanditiis dolorum, inventore nesciunt error animi. Eius reiciendis provident in sunt officiis, rerum delectus illo?
+                                </p>
+                                <a href="#" class=""><i class="bi-twitter text-dark"></i></a>
+                                <a href="#" class=""><i class="bi-linkedin text-dark"></i></a>
+                                <a href="#" class=""><i class="bi-facebook text-dark"></i></a>
+                                <a href="#" class=""><i class="bi-instagram text-dark"></i></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Contact & Map -->
+        <section class="p-5 container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Main Location:</span> MSU-IIT
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Phone Number:</span> +63 975 226 7393
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Full Name:</span> Urel Van William Bermudo
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Test Item:</span> Test Sub-item
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2792.1063874325223!2d124.2450264812682!3d8.239477210633241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1665889110279!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="p-5 bg-dark text-white text-center position-relative">
+            <div class="container">
+                <p class="lead">Copyright &copy; 2021 Frontend Bootcamp</p>
+                <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                    <i class="bi bi-arrow-up-circle h1"></i>
+                </a>
+            </div>
+        </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="enroll" tabindex="-1">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Hi!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <p class="lead">This form doesn't work, for demo purposes only - Urel</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="first-name" class="col-form-label">First Name</label>
+                        <input type="text" id="first-name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="last-name" class="col-form-label">Last Name</label>
+                        <input type="text" id="last-name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email" class="col-form-label">Enter e-mail Address</label>
+                        <input type="text" id="Email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Phone Number" class="col-form-label">Phone Number</label>
+                        <input type="text" id="Phone Number" class="form-control">
+                    </div>
+                </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Continue</button>
+                </div>
+            </div>
+            </div>
+        </div>
     </body>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
